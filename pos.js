@@ -55,3 +55,8 @@ function resetOrderedItems() {
     var orderedItemsList = document.querySelector(".ordered-items-list");
     orderedItemsList.innerHTML = ""; // Clear the content of the list
 }
+
+function resetReceipt() {
+    var receiptItemsList = document.querySelector(".receipt-items-list");
+    receiptItemsList.innerHTML = ""; // Clear the content of the receipt
+}

@@ -1,11 +1,12 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  padding-top: 120px;
+}
+
   .logo {
     max-width: 200px; /* Adjust the max-width as needed */
   }
@@ -20,14 +21,21 @@ body {
     z-index: -1; /* Ensure the rectangle is behind other content */
   }
   
-
   header {
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Position it at the top of the viewport */
+    width: 100%; /* Make it take the full width of the viewport */
+    z-index: 1000;
     background-color: #f9f9f9;
     color: brown;
-    padding: 5px;
+    padding: 0px 0; /* Adjust padding to give space above and below the header */
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  .container {
+    margin-top: 120px; /* Add margin to the container to prevent overlapping */
   }
   
   h1 {
@@ -78,15 +86,14 @@ body {
   }
   
   .tagline button {
-    background-color: #362d2d;
-    color: white;
+    background-color: #f0e6ca;
+    color: white; /* Change the text color to white */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
-  }
-  
+}
   .features-container {
     background-color: #f5d6c3;
     border-radius: 10px;
@@ -167,7 +174,7 @@ body {
   }
   
   .menu-item button {
-    background-color: #362d2d;
+    background-color: #f0e6ca;;
     color: white;
     padding: 10px 20px;
     border: none;

@@ -10,7 +10,7 @@ header .logo {
 header {
     background-color: #e6b79d;
     color: brown;
-    padding: 1px;
+    padding: 5px 0; /* Adjusted padding */
     display: flex;
     flex-direction: column; /* Align items in a column */
     align-items: center;
@@ -19,13 +19,12 @@ header {
 header button {
     background-color: #362d2d;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 16px; /* Adjusted padding */
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px; /* Adjusted font size */
     cursor: pointer;
 }
-
 .container h2 {
     justify-content: center;
     display: flex;
@@ -34,7 +33,7 @@ header button {
 header h1 {
     font-family: "Courier New", Courier, monospace;
     font-family: "Lucida Handwriting", cursive;
-    font-size: 40px;
+    font-size: 32px; /* Adjusted font size */
     font-weight: bold;
     color: #362d2d;
     margin-top: 2px; /* Adjust the margin-top to reduce the gap */
@@ -149,6 +148,36 @@ header h1 {
 .ordered-items-list p {
     margin-bottom: 10px;
 }
+.receipt-container {
+    margin-top: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.receipt {
+    border-top: 2px dashed #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.receipt-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.receipt-item .name {
+    font-weight: bold;
+}
+
+.receipt-item .price {
+    font-style: italic;
+}
+
+
+
 
 .total-amount {
     margin-top: 20px;
